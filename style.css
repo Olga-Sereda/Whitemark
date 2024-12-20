@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* overflow: hidden;
+    background-image: url(./img/houseSide1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.highlight-block {
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-block svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.house-svg {
+    position: absolute;
+    width: 695px;
+    height: auto;
+    top: 29%;
+    left: 45%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* @media (max-width: 768px) {
+    .house-svg {
+        width: 695px;
+        height: auto;
+        left: 34%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .house-svg {
+        width: 695px;
+        height: auto;
+        left: 34%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+} */
