@@ -9,21 +9,21 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container">
             <svg width="45" height="10" viewBox="0 0 45 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="1" rx="0.5" fill="black" />
                 <rect y="9" width="45" height="1" rx="0.5" fill="black" />
             </svg>
-            <a class="button-choose" href="#">
+            <a class="header__button" href="#">
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="0.5" y1="3.5" x2="23.5" y2="3.5" stroke="#AD8361" stroke-linecap="round" />
                     <line x1="23.5" y1="14.5" x2="0.5" y2="14.5" stroke="#AD8361" stroke-linecap="round" />
                     <circle cx="18.5" cy="3.5" r="3" fill="#F0EDE8" stroke="#AD8361" class="circle-1"/>
                     <circle cx="5.5" cy="14.5" r="3" transform="rotate(-180 5.5 14.5)" fill="#F0EDE8" stroke="#AD8361" class="circle-2"/>
                 </svg>
-                <p class="header-text">По параметрам</p>
+                <p class="header__text">По параметрам</p>
             </a>
-            <div class="number__block">
+            <div class="header__contact">
                 <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M23.7652 5.13361C23.0937 2.32965 21.0088 0.360697 18.3839 0.056591C15.7825 -0.247515 13.8337 0.963754 12.364 3.24197C12.2419 3.43268 12.1339 3.62854 11.9977 3.86049C11.9414 3.77286 11.8991 3.7007 11.8568 3.62339C11.0069 2.13379 9.9081 0.963753 8.3726 0.37616C4.95411 -0.922732 0.774902 1.20085 0.0893253 5.83975C-0.244072 8.11797 0.375765 10.1024 1.61544 11.8961C2.51702 13.2001 3.57826 14.3392 4.72871 15.3753C6.97327 17.3958 9.24601 19.3853 11.5047 21.3852C11.6643 21.5244 11.8193 21.6636 11.993 21.8182C12.0541 21.7666 12.1151 21.7203 12.1761 21.6687C14.3972 19.7101 16.6324 17.7669 18.8394 15.7876C20.1354 14.6279 21.361 13.3805 22.38 11.9064C23.1689 10.7621 23.7464 9.51479 23.9343 8.07673C23.953 7.92726 23.9812 7.77263 24 7.62315C24 7.23142 24 6.83454 24 6.44281C23.9202 6.00469 23.8685 5.56142 23.7652 5.13361Z"
@@ -32,21 +32,21 @@
                         d="M11.808 10.14C12.936 10.14 13.788 10.896 13.788 12.636C13.788 14.268 12.864 15.132 11.532 15.132C10.08 15.132 9.516 14.028 9.504 12.84L10.2 12.732C10.224 13.776 10.632 14.46 11.556 14.46C12.504 14.46 13.032 13.74 13.032 12.624C13.032 11.388 12.48 10.74 11.628 10.74C10.812 10.74 10.284 11.136 9.9 11.58L9.732 11.568L10.008 6.924L13.524 6.924V7.584L10.656 7.584L10.452 10.548C10.8 10.296 11.256 10.14 11.808 10.14Z"
                         fill="#F0EDE8" />
                 </svg>
-                <p class="header-text">+7 495 000 00 00</p>
+                <p class="header__text">+7 495 000 00 00</p>
             </div>
-            <div id="title" class="header-title-block">
+            <div id="title" class="header__title-block">
                 Пентхаусы
             </div>
         </div>
     </header>
     <main>
-        <div class="main-container">
+        <div class="main__container">
             <!-- 1-я сторона дома -->
-            <div id="houseSide1-block" class="houseSide1-block">
-                <div class="house-block">
+            <div id="house-side-1" class="house-side house-side--1">
+                <div class="house-side__block">
                     <img id="houseImg1" src="img/houseSide1.png" alt="">
                     <svg width="994" height="673" viewBox="0 0 994 673" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="highlight" id="house1-highlight1" data-hide-floor="true" data-hide-parameters="true" data-remove-from="true" opacity="0" d="M186.5 327.5L178 220L53 284L61.5 295.5L69.5 385L194 437L186.5 327.5Z" fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight1" data-hide-floor="true" data-hide-parameters="true" data-remove-from="true" opacity="0" d="M185.5 327.5L177 220L52 284L60.5 295.5L68.5 385L193 437L185.5 327.5Z" fill="#AD8361" />
                         <path class="highlight" id="house1-highlight2" data-name="ситихауса" data-apartment-count="3" data-floor="1" opacity="0" 
                             d="M312 448L566.5 550.5L610.5 517L653.5 535L745.5 460.5L744 495L653.5 574L612.5 557.5L566.5 590.5L554 585.5L539 578.5L526 574L513 569.5L492.857 559.932L456.5 544.5L314.5 484.5L312 448Z"
                             fill="#AD8361" />
@@ -54,7 +54,7 @@
                             d="M614.5 372.5L571 401.5L180 263L185 314.5L575.5 461.5L625.5 426L657.5 438L681 421L815 330.5L847 307L876 286.5L878.5 249L775.5 322L761 317.5L660.5 390L614.5 372.5Z"
                             fill="#AD8361" />
                         <path class="highlight" id="house1-highlight4" data-name="пентхауса" data-hide-floor="true" data-apartment-count="4" opacity="0"
-                            d="M155 137L461.23 0L811.967 91.2493L800.094 106.059L796.5 150L839 161.5V173L849 177.5L734.5 246L724 241L629 304L591 291L533.5 324.5L175.793 201.608L172 151L161 145L155 137Z"
+                            d="M151 137L457.23 0L807.967 91.2493L796.094 106.059L792.5 150L835 161.5V173L845 177.5L730.5 246L720 241L625 304L587 291L529.5 324.5L171.793 201.608L168 151L157 145L151 137Z"
                             fill="#AD8361" />
                     </svg>
                 </div>
@@ -80,8 +80,8 @@
             </div>
 
             <!-- 2-я сторона дома -->
-            <div id="houseSide2-block" class="houseSide2-block">
-                <div class="house-block">
+            <div id="house-side-2" class="house-side house-side--2">
+                <div class="house-side__block">
                     <img src="img/houseSide2.png" alt="">
                     <svg width="1002" height="675" viewBox="0 0 1002 675" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="highlight" id="house1-highlight5" data-name="пентхауса" data-hide-floor="true" data-apartment-count="4" opacity="0"
@@ -158,7 +158,7 @@
                 <span class="change-view2">Вид-1</span>
             </a>
 
-            <img id="house-streets" class="house-streets" src="img/streets.png" alt="">
+            <img id="house-streets" class="house-streets" src="/img/streets.png" alt="">
 
             <svg id="house-compass" class="house-compass" width="69" height="57" viewBox="0 0 69 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

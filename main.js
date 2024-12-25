@@ -2,7 +2,7 @@ const houseOneHighlights = document.querySelectorAll(".highlight");
 const tooltip = document.getElementById('tooltip1');
 const apartmentBlock = document.getElementById("apartment-block");
 
-
+//подсветка корпусов при загрузке страницы
 window.addEventListener('load', () => {
     houseOneHighlights.forEach((el) => {
         el.style.opacity = "0.8";
@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
     }, 2000);
 })
 
+//подсветка корпусов при наведении, заполнение баблов контентом и отображение их
 houseOneHighlights.forEach(el => {
     el.addEventListener("mouseover", () => {
         el.style.opacity = '0.8'
@@ -58,7 +59,7 @@ houseOneHighlights.forEach(el => {
     });
 });
 
-
+//переключение подсветок в зависимости от вида недвижимости 
 function ChangeHighlits(pathId, radioBtn) {
   houseOneHighlights.forEach((el) => {
     el.style.display = "none";
@@ -73,7 +74,7 @@ function ChangeHighlits(pathId, radioBtn) {
 }
 
 
-
+//переключение сторон дома и соответствующего этому контента (поворот кнопок и пр.)
 const streetImg = document.getElementById("house-streets");
 const compassImg = document.getElementById("house-compass");
 let currentHouseSide = 1;
@@ -94,10 +95,10 @@ document.querySelector(".change-btn").addEventListener("click", (event) => {
 
 
     const currentContainer = document.getElementById(
-      `houseSide${currentHouseSide}-block`
+      `house-side-${currentHouseSide}`
     );
     const nextContainer = document.getElementById(
-      `houseSide${currentHouseSide === 1 ? 2 : 1}-block`
+      `house-side-${currentHouseSide === 1 ? 2 : 1}`
     );
 
     currentContainer.style.display = "none"; 
@@ -107,9 +108,9 @@ document.querySelector(".change-btn").addEventListener("click", (event) => {
 
 
     streetImg.style.transform =
-      streetImg.style.transform === "rotate(-115deg)"
-        ? "rotate(-40deg)"
-        : "rotate(-115deg)";
+      streetImg.style.transform === "rotate(40deg)"
+        ? "rotate(115deg)"
+        : "rotate(40deg)";
 
     compassImg.style.transform =
       compassImg.style.transform === "rotate(-60deg)"
