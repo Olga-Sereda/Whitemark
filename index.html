@@ -5,44 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Whitemark</title>
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-
+            <svg width="45" height="10" viewBox="0 0 45 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="1" rx="0.5" fill="black" />
+                <rect y="9" width="45" height="1" rx="0.5" fill="black" />
+            </svg>
+            <a class="button-choose" href="#">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.5" y1="3.5" x2="23.5" y2="3.5" stroke="#AD8361" stroke-linecap="round" />
+                    <line x1="23.5" y1="14.5" x2="0.5" y2="14.5" stroke="#AD8361" stroke-linecap="round" />
+                    <circle cx="18.5" cy="3.5" r="3" fill="#F0EDE8" stroke="#AD8361" class="circle-1"/>
+                    <circle cx="5.5" cy="14.5" r="3" transform="rotate(-180 5.5 14.5)" fill="#F0EDE8" stroke="#AD8361" class="circle-2"/>
+                </svg>
+                <p class="header-text">По параметрам</p>
+            </a>
+            <div class="number__block">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.7652 5.13361C23.0937 2.32965 21.0088 0.360697 18.3839 0.056591C15.7825 -0.247515 13.8337 0.963754 12.364 3.24197C12.2419 3.43268 12.1339 3.62854 11.9977 3.86049C11.9414 3.77286 11.8991 3.7007 11.8568 3.62339C11.0069 2.13379 9.9081 0.963753 8.3726 0.37616C4.95411 -0.922732 0.774902 1.20085 0.0893253 5.83975C-0.244072 8.11797 0.375765 10.1024 1.61544 11.8961C2.51702 13.2001 3.57826 14.3392 4.72871 15.3753C6.97327 17.3958 9.24601 19.3853 11.5047 21.3852C11.6643 21.5244 11.8193 21.6636 11.993 21.8182C12.0541 21.7666 12.1151 21.7203 12.1761 21.6687C14.3972 19.7101 16.6324 17.7669 18.8394 15.7876C20.1354 14.6279 21.361 13.3805 22.38 11.9064C23.1689 10.7621 23.7464 9.51479 23.9343 8.07673C23.953 7.92726 23.9812 7.77263 24 7.62315C24 7.23142 24 6.83454 24 6.44281C23.9202 6.00469 23.8685 5.56142 23.7652 5.13361Z"
+                        fill="#AD8361" />
+                    <path
+                        d="M11.808 10.14C12.936 10.14 13.788 10.896 13.788 12.636C13.788 14.268 12.864 15.132 11.532 15.132C10.08 15.132 9.516 14.028 9.504 12.84L10.2 12.732C10.224 13.776 10.632 14.46 11.556 14.46C12.504 14.46 13.032 13.74 13.032 12.624C13.032 11.388 12.48 10.74 11.628 10.74C10.812 10.74 10.284 11.136 9.9 11.58L9.732 11.568L10.008 6.924L13.524 6.924V7.584L10.656 7.584L10.452 10.548C10.8 10.296 11.256 10.14 11.808 10.14Z"
+                        fill="#F0EDE8" />
+                </svg>
+                <p class="header-text">+7 495 000 00 00</p>
+            </div>
+            <div id="title" class="header-title-block">
+                Пентхаусы
+            </div>
         </div>
     </header>
     <main>
-        <div class="container main-container">
-            <img class="main-img" src="/img/houseSide1.png" alt="">
-            <div class="highlight-block">
-                <svg  viewBox="0 0 730 461" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                        d="M0.5 137L306.73 0L657.467 91.2493L645.594 106.059L642 150L684.5 161.5V173L694.5 177.5L580 246L569.5 241L474.5 304L436.5 291L379 324.5L21.293 201.608L17.5 151L6.5 145L0.5 137Z"
-                        fill="#AD8361" />
-                    <path opacity="0.8"
-                        d="M465.5 371.5L422 400.5L31 262L36 313.5L426.5 460.5L476.5 425L508.5 437L532 420L666 329.5L698 306L727 285.5L729.5 248L626.5 321L612 316.5L511.5 389L465.5 371.5Z"
-                        fill="#AD8361" />
-                    <polygon id="gp_f4" fill="#2A51A3" stroke="#000000" stroke-miterlimit="10"
-                        points="2881.3,987.3 2881.6,823.7 2346.3,823.7  2263.9,834.3 2116.5,837.7 1170.1,834.6 1101.3,823 555.9,823 555.9,987.3 1101.7,987.3 1168.6,980 1321.3,975.7 2116.3,975.7  2264.6,981.5 2344.6,987.3 "
-                        opacity="1" style="opacity: 1;"></polygon>
-                </svg>
+        <div class="main-container">
+            <!-- 1-я сторона дома -->
+            <div id="houseSide1-block" class="houseSide1-block">
+                <div class="house-block">
+                    <img id="houseImg1" src="img/houseSide1.png" alt="">
+                    <svg width="994" height="673" viewBox="0 0 994 673" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="highlight" id="house1-highlight1" data-hide-floor="true" data-hide-parameters="true" data-remove-from="true" opacity="0" d="M186.5 327.5L178 220L53 284L61.5 295.5L69.5 385L194 437L186.5 327.5Z" fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight2" data-name="ситихауса" data-apartment-count="3" data-floor="1" opacity="0" 
+                            d="M312 448L566.5 550.5L610.5 517L653.5 535L745.5 460.5L744 495L653.5 574L612.5 557.5L566.5 590.5L554 585.5L539 578.5L526 574L513 569.5L492.857 559.932L456.5 544.5L314.5 484.5L312 448Z"
+                            fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight3" data-name="квартиры" data-apartment-count="3" data-floor="4" opacity="0" 
+                            d="M614.5 372.5L571 401.5L180 263L185 314.5L575.5 461.5L625.5 426L657.5 438L681 421L815 330.5L847 307L876 286.5L878.5 249L775.5 322L761 317.5L660.5 390L614.5 372.5Z"
+                            fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight4" data-name="пентхауса" data-hide-floor="true" data-apartment-count="4" opacity="0"
+                            d="M155 137L461.23 0L811.967 91.2493L800.094 106.059L796.5 150L839 161.5V173L849 177.5L734.5 246L724 241L629 304L591 291L533.5 324.5L175.793 201.608L172 151L161 145L155 137Z"
+                            fill="#AD8361" />
+                    </svg>
+                </div>
 
+                <div class="buttins-block">
+                    <div class="form_radio_btn">
+                        <input id="radio-1" onclick="ChangeHighlits('house1-highlight4', this)" type="radio" name="radio" value="1">
+                        <label class="first-label" for="radio-1">Пентхаусы</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-2" onclick="ChangeHighlits('house1-highlight3', this)" type="radio" name="radio" value="2">
+                        <label for="radio-2">Квартиры</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-3" onclick="ChangeHighlits('house1-highlight2', this)" type="radio" name="radio" value="3">
+                        <label for="radio-3">Ситихаусы</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-4" onclick="ChangeHighlits('house1-highlight1', this)" type="radio" name="radio" value="4">
+                        <label class="last-label" for="radio-4">Виллы</label>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 2-я сторона дома -->
+            <div id="houseSide2-block" class="houseSide2-block">
+                <div class="house-block">
+                    <img src="img/houseSide2.png" alt="">
+                    <svg width="1002" height="675" viewBox="0 0 1002 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="highlight" id="house1-highlight5" data-name="пентхауса" data-hide-floor="true" data-apartment-count="4" opacity="0"
+                            d="M568.5 36L529.5 29L476.5 38L255.5 97V103L217 114L223.5 124L238 130L241.5 190.5L596.5 285.5L875 178.5V124L889 119.5L897 109.5L863.5 97V92.5L813 83V50.5H804H798.5L794 79.5L587.5 36V5.5H577L568.5 11.5V36Z"
+                            fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight6" data-name="квартиры" data-apartment-count="3" data-floor="4" opacity="0" opacity="0" d="M893.5 287L896 229L594.5 351L243 245.5L245 299.5L596 414L893.5 287Z" fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight7" data-name="ситихауса" data-apartment-count="3" data-floor="1" opacity="0" d="M890 376L707 462V514L890 414.5V376Z" fill="#AD8361" />
+                        <path class="highlight" id="house1-highlight8" data-hide-floor="true" data-hide-parameters="true" data-remove-from="true" opacity="0"
+                            d="M75.5 340.5L53 349.5L58 361.5L68 478.5L107 496.5L142 511.5L202 538.5L230.5 525V417L382 346L210 289L75.5 334.5V340.5Z"
+                            fill="#AD8361" />
+                    </svg>
+                </div>
 
-                <!-- <svg class='house-svg' viewBox="0 0 695 325" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                        d="M0.5 137L306.73 0L657.467 91.2493L645.594 106.059L642 150L684.5 161.5V173L694.5 177.5L580 246L569.5 241L474.5 304L436.5 291L379 324.5L21.293 201.608L17.5 151L6.5 145L0.5 137Z"
-                        fill="#AD8361" />
-                </svg>  -->
+                <div class="buttins-block">
+                    <div class="form_radio_btn">
+                        <input id="radio-5" onclick="ChangeHighlits('house1-highlight5', this)" type="radio" name="radio" value="5">
+                        <label class="first-label" for="radio-5">Пентхаусы</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-6" onclick="ChangeHighlits('house1-highlight6', this)" type="radio" name="radio" value="6">
+                        <label for="radio-6">Квартиры</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-7" onclick="ChangeHighlits('house1-highlight7', this)" type="radio" name="radio" value="7">
+                        <label for="radio-7">Ситихаусы</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-8" onclick="ChangeHighlits('house1-highlight8', this)" type="radio" name="radio" value="8">
+                        <label class="last-label" for="radio-8">Виллы</label>
+                    </div>
+                </div>
             </div>
             
+
+            <!-- переиспользуемые части -->
+            <div class="tooltip" id="tooltip1">
+                <div id="floor-block" class="floor-block">
+                    <p id="floor" class="floor">4 этаж</p>
+                </div>
+                <div class="tooltip-block">
+                    <div id="parameters-block1" class="parameters-block">
+                        <div id="apartment-block" class="apartment-block">
+                            <p class="apartment-count">4</p>
+                            <p class="apartment-name">пентхауса</p>
+                        </div>
+                        <p class="parameters-text">в продаже</p>
+                    </div>
+                    <div class="parameters-block">
+                        <div class="count-block">
+                            <p class="count-from">от <span class="value">120</span> м&sup2</p>  
+                        </div>
+                        <p class="parameters-text">площадь</p>
+                    </div>
+                    <div class="parameters-block">
+                        <div class="count-block">
+                            <p class="count-from">от <span class="value">310 000 000</span> <span class="dollar">₽</span> </p>
+                        </div>
+                        <p class="parameters-text">площадь</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <a href="#" class="change-btn">
+                <span class="change-view1">Вид-2</span>
+                <svg width="132" height="49" viewBox="0 0 132 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M73.3516 2.50032C73.0756 2.48996 72.8435 2.70526 72.8332 2.98121C72.8228 3.25716 73.0381 3.48926 73.3141 3.49962L73.3516 2.50032ZM70.6667 46C70.6667 44.5272 69.4728 43.3333 68 43.3333C66.5272 43.3333 65.3333 44.5272 65.3333 46C65.3333 47.4728 66.5272 48.6667 68 48.6667C69.4728 48.6667 70.6667 47.4728 70.6667 46ZM73.3141 3.49962C89.7754 4.11764 104.87 6.80409 115.505 10.9888L115.871 10.0583C105.097 5.81856 89.8808 3.1209 73.3516 2.50032L73.3141 3.49962ZM115.505 10.9888C120.825 13.082 124.792 15.4573 127.306 17.9579C129.814 20.4534 130.836 23.0275 130.403 25.5667L131.389 25.7348C131.894 22.7718 130.664 19.8884 128.011 17.2489C125.362 14.6145 121.256 12.1773 115.871 10.0583L115.505 10.9888ZM130.403 25.5667C129.966 28.1313 128.041 30.6994 124.652 33.1185C121.273 35.5316 116.497 37.7516 110.493 39.6344L110.792 40.5886C116.856 38.6873 121.738 36.428 125.234 33.9323C128.721 31.4426 130.888 28.6725 131.389 25.7348L130.403 25.5667ZM110.493 39.6344C98.4802 43.4012 84.5578 45.5027 68.0001 45.5L67.9999 46.5C84.643 46.5027 98.6682 44.3902 110.792 40.5886L110.493 39.6344Z"
+                        fill="black" />
+                    <path
+                        d="M58.6484 46.4997C58.9244 46.51 59.1565 46.2947 59.1668 46.0188C59.1772 45.7428 58.9619 45.5107 58.6859 45.5004L58.6484 46.4997ZM16.3119 38.4765L16.495 38.0112L16.3119 38.4765ZM1.10395 23.3492L0.611062 23.2652L1.10395 23.3492ZM21.3576 8.88846L21.5072 9.36556L21.3576 8.88846ZM60.8333 3C60.8333 4.47276 62.0272 5.66667 63.5 5.66667C64.9728 5.66667 66.1667 4.47276 66.1667 3C66.1667 1.52724 64.9728 0.333333 63.5 0.333333C62.0272 0.333333 60.8333 1.52724 60.8333 3ZM58.6859 45.5004C42.2246 44.8823 27.1297 42.1959 16.495 38.0112L16.1288 38.9417C26.9033 43.1814 42.1192 45.8791 58.6484 46.4997L58.6859 45.5004ZM16.495 38.0112C11.1755 35.918 7.20839 33.5427 4.69445 31.0421C2.18564 28.5466 1.16381 25.9725 1.59683 23.4333L0.611062 23.2652C0.105779 26.2282 1.33563 29.1116 3.98923 31.7511C6.6377 34.3855 10.7437 36.8227 16.1288 38.9417L16.495 38.0112ZM1.59683 23.4333C2.03417 20.8687 3.95946 18.3005 7.34758 15.8815C10.7274 13.4683 15.5026 11.2484 21.5072 9.36556L21.208 8.41137C15.1444 10.3127 10.2619 12.572 6.7665 15.0676C3.27943 17.5573 1.11203 20.3274 0.611062 23.2652L1.59683 23.4333ZM21.5072 9.36556C33.5213 5.59833 46.944 3.49728 63.4999 3.5L63.5001 2.5C46.8552 2.49726 33.3303 4.61021 21.208 8.41137L21.5072 9.36556Z"
+                        fill="black" />
+                </svg>
+                <span class="change-view2">Вид-1</span>
+            </a>
+
+            <img id="house-streets" class="house-streets" src="/img/streets.png" alt="">
+
+            <svg id="house-compass" class="house-compass" width="69" height="57" viewBox="0 0 69 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M23.243 33.578L2.89721 27.6939L23.6034 23.2577L29.4879 2.89769L33.9379 23.6186L54.2842 29.4884L33.5775 33.9388L27.6934 54.2846L23.243 33.578Z"
+                    stroke="black" stroke-miterlimit="10" />
+                <path
+                    d="M68.1695 26.4821C66.6292 24.6897 63.9232 24.4851 62.1308 26.0254C60.3385 27.5657 60.1338 30.2718 61.6741 32.0641C63.2145 33.8565 65.9205 34.0611 67.7128 32.5208"
+                    stroke="black" stroke-miterlimit="10" />
+                <path d="M36.5341 33.1557L42.3659 43.3635L32.5898 36.8339" stroke="black" stroke-miterlimit="10" />
+                <path d="M20.6465 24.0269L14.8147 13.8192L24.5903 20.3631" stroke="black" stroke-miterlimit="10" />
+                <path d="M24.0246 36.5363L13.8169 42.3681L20.3465 32.592" stroke="black" stroke-miterlimit="10" />
+                <path d="M33.1553 20.6606L43.3635 14.8146L36.8339 24.5906" stroke="black" stroke-miterlimit="10" />
+                <path
+                    d="M24.3075 28.4422C24.2249 30.8072 26.0751 32.7913 28.4402 32.8739C30.8052 32.9565 32.7894 31.1062 32.8719 28.7412C32.9545 26.3762 31.1043 24.392 28.7392 24.3094C26.3742 24.2269 24.39 26.0771 24.3075 28.4422Z"
+                    stroke="black" stroke-miterlimit="10" />
+            </svg>
         </div>
     </main>
 </body>
 </html>
-
- <!-- <svg viewBox="0 0 1776 943">
-                <image class="image" xlink:href="/img/houseSide1.png" width="100%" height="100%" />
-                <image class="image" xlink:href="/img/Vector186.svg" width="100%" height="325px" />
-            </svg> -->
