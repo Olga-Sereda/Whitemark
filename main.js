@@ -1,6 +1,6 @@
-const houseOneHighlights = document.querySelectorAll(".highlight");
-const tooltip = document.getElementById('tooltip1');
-const apartmentBlock = document.getElementById("apartment-block");
+const houseOneHighlights = document.querySelectorAll(".house-side__highlight");
+const tooltip = document.getElementById('tooltip');
+const apartmentBlock = document.getElementById("tooltip__apartment");
 
 //подсветка корпусов при загрузке страницы
 window.addEventListener('load', () => {
@@ -24,23 +24,25 @@ houseOneHighlights.forEach(el => {
         const nameContent = el.getAttribute("data-name");
         const apartmentCount = el.getAttribute("data-apartment-count");
         apartmentBlock.innerHTML = `
-            <div id="apartment-block" class="apartment-block">
-                <p class="apartment-count">${apartmentCount}</p>
-                <p class="apartment-name">${nameContent}</p>
+            <div id="tooltip__apartment" class="tooltip__apartment">
+                <p class="tooltip__apartment-count">${apartmentCount}</p>
+                <p class="tooltip__apartment-name">${nameContent}</p>
             </div>`;
 
         const floorNumber = el.getAttribute("data-floor");
-        document.getElementById('floor').innerHTML = `<p class="floor">${floorNumber} этаж</p>`;
+        document.getElementById("floor").innerHTML = `<p id="floor" class="tooltip__floor">${floorNumber} этаж</p>`;
 
         const floorBlock = document.getElementById("floor-block");
         el.getAttribute("data-hide-floor") ? floorBlock.style.display = "none" : floorBlock.style.display = "block";
         
-        const parametersBlock = document.getElementById("parameters-block1");
+        const parametersBlock = document.getElementById("tooltip__parameters1");
         el.getAttribute("data-hide-parameters") ? parametersBlock.style.display = "none" : parametersBlock.style.display = "block"
         
 
         if (el.getAttribute("data-remove-from")) {
-        const countFrom = document.querySelectorAll(".count-from");
+        const countFrom = document.querySelectorAll(
+          ".tooltip__parameters-count-from"
+        );
         countFrom.forEach((countEl) => {
             countEl.innerHTML = countEl.innerHTML.replace("от ", "");
         });
@@ -82,8 +84,8 @@ let currentHouseSide = 1;
 document.querySelector(".change-btn").addEventListener("click", (event) => {
     event.preventDefault(); 
 
-    const view1 = document.querySelector(".change-view1");
-    const view2 = document.querySelector(".change-view2");
+    const view1 = document.querySelector(".change-btn__view1");
+    const view2 = document.querySelector(".change-btn__view2");
 
     const temp = view1.textContent;
     view1.textContent = view2.textContent;

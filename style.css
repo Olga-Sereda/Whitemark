@@ -61,7 +61,8 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 105px;
+    justify-content: space-between;
+    gap: 5vw;
 }
 
 .header__title-block {
@@ -203,7 +204,7 @@ svg:hover .circle-2 {
     max-width: 995px;
 }
 
-.highlight-block {
+/* .highlight-block {
     width: 100%;
     height: 100%;
 }
@@ -213,25 +214,25 @@ svg:hover .circle-2 {
     width: 695px;
     left: 0;
     top: 0;
-}
+} */
 
-.highlight {
+.house-side__highlight {
     transition: opacity 0.4s ease;
     cursor: pointer;
 }
 
-.buttins-block {
+.house-side__buttons {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.form_radio_btn input[type=radio] {
+.form-radio-btn input[type=radio] {
     display: none;
 }
 
-.form_radio_btn label {
+.form-radio-btn label {
     display: inline-block;
     cursor: pointer;
     width: 207px;
@@ -252,12 +253,12 @@ svg:hover .circle-2 {
     border-radius: 0 0 20px 0;
 }
 
-.form_radio_btn input[type=radio]:checked+label {
+.form-radio-btn input[type=radio]:checked+label {
     background: var(--brown-color);
     color: #fff;
 }
 
-.form_radio_btn label:hover {
+.form-radio-btn label:hover {
     color: var(--brown-color);
 }
 
@@ -275,13 +276,13 @@ svg:hover .circle-2 {
     transition: display 0.5 ease-in-out;
 }
 
-.floor-block {
+.tooltip__floor-block {
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.floor {
+.tooltip__floor {
     color: var(--brown-color);
     font-size: 26px;
     margin: 0;
@@ -289,33 +290,33 @@ svg:hover .circle-2 {
     font-weight: 300;
 }
 
-.tooltip-block {
+.tooltip__content-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.parameters-block {
+.tooltip__parameters {
     display: flex;
     flex-direction: column;
 }
 
-.apartment-block {
+.tooltip__apartment {
     display: flex;
     gap: 5px;
 }
 
-.apartment-count {
+.tooltip__apartment-count {
     font-size: 30px;
     margin: 0;
 }
 
-.apartment-name {
+.tooltip__apartment-name {
     font-size: 20px;
     margin: auto 0;
 }
 
-.parameters-text {
+.tooltip__parameters-text {
     font-size: 16px;
     opacity: 0.7;
     line-height: 135%;
@@ -323,23 +324,23 @@ svg:hover .circle-2 {
     margin-top: -5px;
 }
 
-.count-block {
+.tooltip__parameters-count-block {
     display: flex;
     align-items: baseline;
     gap: 5px;
 }
 
-.count-from {
+.tooltip__parameters-count-from {
     font-size: 26px;
     margin: 0;
 }
 
-.value {
+.tooltip__parameters-value {
     font-size: 30px;
     margin: 0;
 }
 
-.dollar {
+.tooltip__parameters-dollar {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 28px;
@@ -362,12 +363,12 @@ svg:hover .circle-2 {
     transform: scale(1.1);
 }
 
-.change-view1 {
+.change-btn__view1 {
     font-size: 22px;
     opacity: 0.7;
 }
 
-.change-view2 {
+.change-btn__view2 {
     font-size: 35px;
     line-height: 110%;
 }
